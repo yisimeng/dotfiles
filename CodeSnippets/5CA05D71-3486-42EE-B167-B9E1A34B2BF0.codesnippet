@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>label init</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UILabel * &lt;#label#&gt; = [[UILabel alloc] init];
+    &lt;#label#&gt;.text = @"";
+    &lt;#label#&gt;.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+    &lt;#label#&gt;.backgroundColor = [UIColor &lt;#color#&gt;];
+    &lt;#label#&gt;.textColor = [UIColor &lt;#color#&gt;];
+    &lt;#label#&gt;.layer.cornerRadius = &lt;#(CGFloat)#&gt;;
+    &lt;#label#&gt;.layer.masksToBounds = &lt;#BOOL#&gt;;
+    [&lt;#label#&gt; sizeToFit];
+    [&lt;#superView#&gt; addSubview:&lt;#label#&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5CA05D71-3486-42EE-B167-B9E1A34B2BF0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UILabel 初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UILabel Initialization</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
