@@ -2,6 +2,12 @@
 
 echo '配置Xcode代码片段'
 
+if test -d ~/Library/Developer/Xcode
+then
+echo "Xcode not exist, please download Xcode"
+exit 0
+fi
+
 if test -d ~/Library/Developer/Xcode/UserData/CodeSnippets
 then
   echo 'file exist, merge'
