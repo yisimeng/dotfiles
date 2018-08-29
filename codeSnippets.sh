@@ -2,7 +2,7 @@
 
 echo '配置Xcode代码片段'
 
-if test -d ~/Library/Developer/Xcode
+if test ! -d ~/Library/Developer/Xcode
 then
 echo "Xcode not exist, please download Xcode"
 exit 0
