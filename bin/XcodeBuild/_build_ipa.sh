@@ -24,15 +24,17 @@ usage() {
         -p, --project           the project launch file
         -w, --workspace         the workspace launch file
         -s, --scheme            the scheme of the project
-        -c, --configuration     Debug or Release
+        -c, --configuration     debug or Release
+        -out                    build out path
+        -exportPlist            export options plist
         -h, --help              display this help and exit
 EOF
-exit $1
+    exit $1
 }
 # 显示帮助
 [ "$1" = "" ] && Usage
 
-set -- `getopt p:w:s:c:h: -- "$@"`
+set -- `getopt -o p:w:s:c:h: -l out:exportPlist: -- "$@"`
 
 echo "param = $@"
 while [ -n "$1" ]
@@ -55,6 +57,14 @@ do
         -c|--configuration)
             configuration=$2
             echo "configuration = $2"
+        shift ;;
+        -out|--out_path)
+            out_path=$2
+            echo "out_path = $2"
+        shift ;;
+        -exportPlist)
+            out_path=$2
+            echo "exportPlist = $2"
         shift ;;
         -h)
             usage
