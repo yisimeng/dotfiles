@@ -8,19 +8,20 @@ if [[ ! -f '/usr/local/bin/brew' ]];then
 	brew install vim
 	brew install git-extras
 	brew install imagemagic
+    brew install macdown
 fi 
 
 # alias
 if [ -f $CURRENT_HOME/alias.sh ]; then
-	. $CURRENT_HOME/alias.sh
+	source "$CURRENT_HOME/alias.sh"
 fi
 
 # git completion
 if [ -f ~/.git-completion.bash ]; then
-. ~/.git-completion.bash
+    source "~/.git-completion.bash"
 fi
+
 
 # Xcode build
 XcodeBuild=$CURRENT_HOME"/XcodeBuild"
-
 export PATH="$XcodeBuild:$PATH"
