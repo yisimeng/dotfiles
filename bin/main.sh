@@ -6,9 +6,15 @@ CURRENT_HOME=~/myRepo/myconfigs/bin
 if [[ ! -f '/usr/local/bin/brew' ]];then
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew install vim
+	# git 扩展
 	brew install git-extras
 	brew install imagemagic
-    brew install macdown
+	brew install macdown
+	brew install mas
+	brew install google-chrome
+	
+	
+	mas install 
 fi 
 
 # alias
