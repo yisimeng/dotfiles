@@ -12,6 +12,7 @@ if [[ ! -f '/usr/local/bin/brew' ]];then
 	brew install mas
 	brew install google-chrome
 	brew install iterm2
+	brew install ffmpeg	
 
 	# mas	
 	mas install 497799835 # Xcode
