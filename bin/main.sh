@@ -38,6 +38,10 @@ fi
 	sudo gem install cocoapods --verbose
     pod setup --verbose
 
+	# GitHub App
+	# TynyPNG4Mac:https://github.com/kyleduo/TinyPNG4Mac.git
+	
+
 # alias
 if [ -f $CURRENT_HOME/alias.sh ]; then
 	source "$CURRENT_HOME/alias.sh"
