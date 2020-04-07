@@ -1,5 +1,3 @@
-# .bashrc
+#!/bin/sh
 
-sh ~/simeng/myconfigs/bin/alias.sh
-
-
+source ~/simeng/myconfigs/bin/alias.sh
